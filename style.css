@@ -1,0 +1,155 @@
+/* Basic Reset & Typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    /* 基準のフォントサイズを参照画像に合わせ、少し小さく変更 */
+    font-size: 15px; 
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header (Left Sidebar) */
+header {
+    width: 25%;
+    float: left;
+    padding-right: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+    text-align: left;
+}
+
+header h1 {
+    /* フォントサイズを縮小 */
+    font-size: 20px; 
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header h1 a {
+    color: #0366d6;
+}
+
+header img {
+    width: 100%;
+    max-width: 200px; /* Max image width */
+    height: auto;
+    border-radius: 6px; /* Slightly rounded corners like the example */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 14px;
+    color: #586069; /* GitHub-like text color */
+    margin-bottom: 10px;
+}
+
+header .view a {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #24292e;
+}
+header .view a:hover {
+    background-color: #f6f8fa;
+    text-decoration: none;
+}
+
+header .footer {
+    font-size: 12px;
+    color: #6a737d;
+    margin-top: 30px;
+}
+
+/* Main Content (Right Area) */
+.container {
+    width: 75%;
+    float: right;
+    padding-left: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+.container h1 {
+    /* フォントサイズを縮小 */
+    font-size: 28px; 
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 10px;
+}
+
+.container h2 {
+    /* フォントサイズを縮小 */
+    font-size: 22px; 
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 8px;
+}
+
+.container h3 {
+    /* フォントサイズを縮小し、色を参照画像に合わせて青に変更 */
+    font-size: 18px;
+    font-weight: 600;
+    color: #0366d6; /* 参照画像（motimoti様）のh3スタイルに合わせる */
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Nested lists */
+ul ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+li strong {
+    /* For "About Me" section labels */
+    color: #24292e;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    header {
+        float: none;
+        width: 100%;
+        text-align: center; /* Center sidebar content on mobile */
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    header img {
+        max-width: 200px; /* Maintain image size */
+    }
+
+    .container {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+}
